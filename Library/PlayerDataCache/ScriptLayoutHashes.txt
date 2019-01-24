@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/Apps/Unity/Projects/Madary/Builds/Android.apk
+D:/Apps/Unity/Projects/Madary/Builds/Android2.apk
 SceneListBegin?
 Assets/low poly pack/scene/Demo4.unity
 SceneListEnd?
