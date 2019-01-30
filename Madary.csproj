@@ -334,6 +334,8 @@
     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
     <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\DoubleSlidingDoorController.cs" />
     <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\FlickeringLight.cs" />
+    <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\DoubleSlidingDoorController.cs" />
+    <Compile Include="Assets\Low Poly Flat Sci Fi Assets\Low Poly Flat Sci Fi Assets\Demo\Scripts\FlickeringLight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
@@ -351,6 +353,7 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
+    <None Include="Assets\Low Poly Flat Sci Fi Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
     <None Include="Assets\SciFiPack1\README.txt" />
     <None Include="Assets\Space Theme Items and Props Starter Pack\--ReadMe--.txt" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SciFiPack1/Scenes/scifi_example.unity
+- path: Assets/Game Elements/Scenes/Mars/Mars.unity
   isLoaded: 1
   isActive: 1

@@ -321,6 +321,7 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
+    <None Include="Assets\Low Poly Flat Sci Fi Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
     <None Include="Assets\SciFiPack1\README.txt" />
     <None Include="Assets\Space Theme Items and Props Starter Pack\--ReadMe--.txt" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
