@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/low poly pack/scene/Demo2.unity
+- path: Assets/Game Elements/Scenes/Earth.unity
   isLoaded: 1
   isActive: 1
