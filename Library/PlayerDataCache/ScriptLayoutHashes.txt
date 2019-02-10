@@ -1,8 +1,8 @@
 Android
 PlayerPath?
-D:/Apps/Unity/Projects/Madary/Builds/Android2.apk
+D:/Apps/Unity/Projects/Madary/Builds/Android_Earth.apk
 SceneListBegin?
-Assets/low poly pack/scene/Demo4.unity
+Assets/Game Elements/Scenes/Earth.unity
 SceneListEnd?
 176f67aae4ec7273cfef37fd8876bd9a Assembly-CSharp.dll:.GvrDropdown
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
