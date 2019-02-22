@@ -173,28 +173,28 @@
     </member>
     <member name="M:UnityEngine.Animation.Play()">
       <summary>
-        <para>Plays an animation without any blending.</para>
+        <para>Plays an animation without blending.</para>
       </summary>
       <param name="mode"></param>
       <param name="animation"></param>
     </member>
     <member name="M:UnityEngine.Animation.Play(System.String)">
       <summary>
-        <para>Plays an animation without any blending.</para>
+        <para>Plays an animation without blending.</para>
       </summary>
       <param name="mode"></param>
       <param name="animation"></param>
     </member>
     <member name="M:UnityEngine.Animation.Play(UnityEngine.PlayMode)">
       <summary>
-        <para>Plays an animation without any blending.</para>
+        <para>Plays an animation without blending.</para>
       </summary>
       <param name="mode"></param>
       <param name="animation"></param>
     </member>
     <member name="M:UnityEngine.Animation.Play(System.String,UnityEngine.PlayMode)">
       <summary>
-        <para>Plays an animation without any blending.</para>
+        <para>Plays an animation without blending.</para>
       </summary>
       <param name="mode"></param>
       <param name="animation"></param>

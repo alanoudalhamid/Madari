@@ -2061,14 +2061,14 @@ Here is an example of handling the callback:</para>
     </member>
     <member name="M:UnityEngine.Application.LoadLevel(System.Int32)">
       <summary>
-        <para>Loads the level by its name or index.</para>
+        <para>Note: This is now obsolete. Use SceneManager.LoadScene instead.</para>
       </summary>
       <param name="index">The level to load.</param>
       <param name="name">The name of the level to load.</param>
     </member>
     <member name="M:UnityEngine.Application.LoadLevel(System.String)">
       <summary>
-        <para>Loads the level by its name or index.</para>
+        <para>Note: This is now obsolete. Use SceneManager.LoadScene instead.</para>
       </summary>
       <param name="index">The level to load.</param>
       <param name="name">The name of the level to load.</param>
@@ -4375,7 +4375,7 @@ If called outside of a rendering callback and stereo is enabled, it will return 
       <summary>
         <para>Makes this camera's settings match other camera.</para>
       </summary>
-      <param name="other"></param>
+      <param name="other">Copy camera settings to the other camera.</param>
     </member>
     <member name="M:UnityEngine.Camera.CopyStereoDeviceProjectionMatrixToNonJittered(UnityEngine.Camera/StereoscopicEye)">
       <summary>
@@ -4479,7 +4479,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       <param name="cubemap">The cube map to render to.</param>
       <param name="faceMask">A bitmask which determines which of the six faces are rendered to.</param>
       <returns>
-        <para>False is rendering fails, else true.</para>
+        <para>False if rendering fails, else true.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Camera.RenderToCubemap(UnityEngine.RenderTexture,System.Int32)">
@@ -4489,7 +4489,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       <param name="faceMask">A bitfield indicating which cubemap faces should be rendered into.</param>
       <param name="cubemap">The texture to render to.</param>
       <returns>
-        <para>False is rendering fails, else true.</para>
+        <para>False if rendering fails, else true.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Camera.RenderWithShader(UnityEngine.Shader,System.String)">
@@ -4837,7 +4837,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       </summary>
       <param name="H">Hue [0..1].</param>
       <param name="S">Saturation [0..1].</param>
-      <param name="V">Value [0..1].</param>
+      <param name="V">Brightness value [0..1].</param>
       <param name="hdr">Output HDR colours. If true, the returned colour will not be clamped to [0..1].</param>
       <returns>
         <para>An opaque colour with HSV matching the input.</para>
@@ -4849,7 +4849,7 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       </summary>
       <param name="H">Hue [0..1].</param>
       <param name="S">Saturation [0..1].</param>
-      <param name="V">Value [0..1].</param>
+      <param name="V">Brightness value [0..1].</param>
       <param name="hdr">Output HDR colours. If true, the returned colour will not be clamped to [0..1].</param>
       <returns>
         <para>An opaque colour with HSV matching the input.</para>
@@ -4871,9 +4871,9 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
       <summary>
         <para>Linearly interpolates between colors a and b by t.</para>
       </summary>
-      <param name="a">Color a</param>
-      <param name="b">Color b</param>
-      <param name="t">Float for combining a and b</param>
+      <param name="a">Color a.</param>
+      <param name="b">Color b.</param>
+      <param name="t">Float for combining a and b.</param>
     </member>
     <member name="M:UnityEngine.Color.LerpUnclamped(UnityEngine.Color,UnityEngine.Color,System.Single)">
       <summary>
@@ -12208,7 +12208,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Input.GetKey(System.String)">
       <summary>
-        <para>Returns true while the user holds down the key identified by name. Think auto fire.</para>
+        <para>Returns true while the user holds down the key identified by name.</para>
       </summary>
       <param name="name"></param>
     </member>
@@ -12848,6 +12848,21 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneX">
       <summary>
         <para>iPhone X.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneXR">
+      <summary>
+        <para>iPhone XR.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneXS">
+      <summary>
+        <para>iPhone XS.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneXSMax">
+      <summary>
+        <para>iPhone XSMax.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch1Gen">
@@ -14872,7 +14887,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="T:UnityEngine.LayerMask">
       <summary>
-        <para>LayerMask allow you to display the LayerMask popup menu in the inspector.</para>
+        <para>Specifies Layers to use in a Physics.Raycast.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.LayerMask.value">
@@ -15187,7 +15202,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="P:UnityEngine.LightmapSettings.lightmapsMode">
       <summary>
-        <para>Non-directional, Directional or Directional Specular lightmaps rendering mode.</para>
+        <para>NonDirectional or CombinedDirectional Specular lightmaps rendering mode.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.LightmapSettings.lightProbes">
@@ -17610,7 +17625,7 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="F:UnityEngine.Mathf.PI">
       <summary>
-        <para>The infamous 3.14159265358979... value (Read Only).</para>
+        <para>The well-known 3.14159265358979... value (Read Only).</para>
       </summary>
     </member>
     <member name="M:UnityEngine.Mathf.PingPong(System.Single,System.Single)">
@@ -22010,7 +22025,7 @@ frame. Minimum value is 1 and maximum is 33.</para>
     </member>
     <member name="P:UnityEngine.Quaternion.eulerAngles">
       <summary>
-        <para>Returns the euler angle representation of the rotation.</para>
+        <para>Returns or sets the euler angle representation of the rotation.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Quaternion.identity">
@@ -22993,7 +23008,7 @@ frame. Minimum value is 1 and maximum is 33.</para>
       <summary>
         <para>Get the corners of the calculated rectangle in world space.</para>
       </summary>
-      <param name="fourCornersArray">The ray that corners are filled into.</param>
+      <param name="fourCornersArray">The array that corners are filled into.</param>
     </member>
     <member name="T:UnityEngine.RectTransform.ReapplyDrivenProperties">
       <summary>
@@ -23731,6 +23746,11 @@ See Also: ReflectionProbeTimeSlicingMode.</para>
     <member name="F:UnityEngine.Rendering.BuiltinRenderTextureType.Reflections">
       <summary>
         <para>Reflections gathered from default reflection and reflections probes.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Rendering.BuiltinRenderTextureType.RenderTexture">
+      <summary>
+        <para>The given RenderTexture.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Rendering.BuiltinRenderTextureType.ResolvedDepth">
@@ -27544,37 +27564,37 @@ See RenderTexture.useMipMap.</para>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.buildIndex">
       <summary>
-        <para>Returns the index of the scene in the Build Settings. Always returns -1 if the scene was loaded through an AssetBundle.</para>
+        <para>Return the index of the Scene in the Build Settings.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.isDirty">
       <summary>
-        <para>Returns true if the scene is modifed.</para>
+        <para>Returns true if the Scene is modifed.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.isLoaded">
       <summary>
-        <para>Returns true if the scene is loaded.</para>
+        <para>Returns true if the Scene is loaded.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.name">
       <summary>
-        <para>Returns the name of the scene.</para>
+        <para>Returns the name of the Scene.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.path">
       <summary>
-        <para>Returns the relative path of the scene. Like: "AssetsMyScenesMyScene.unity".</para>
+        <para>Returns the relative path of the Scene. Like: "AssetsMyScenesMyScene.unity".</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.Scene.rootCount">
       <summary>
-        <para>The number of root transforms of this scene.</para>
+        <para>The number of root transforms of this Scene.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.SceneManagement.Scene.GetRootGameObjects">
       <summary>
-        <para>Returns all the root game objects in the scene.</para>
+        <para>Returns all the root game objects in the Scene.</para>
       </summary>
       <returns>
         <para>An array of game objects.</para>
@@ -27582,17 +27602,17 @@ See RenderTexture.useMipMap.</para>
     </member>
     <member name="M:UnityEngine.SceneManagement.Scene.GetRootGameObjects(System.Collections.Generic.List`1&lt;UnityEngine.GameObject&gt;)">
       <summary>
-        <para>Returns all the root game objects in the scene.</para>
+        <para>Returns all the root game objects in the Scene.</para>
       </summary>
       <param name="rootGameObjects">A list which is used to return the root game objects.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.Scene.IsValid">
       <summary>
-        <para>Whether this is a valid scene.
-A scene may be invalid if, for example, you tried to open a scene that does not exist. In this case, the scene returned from EditorSceneManager.OpenScene would return False for IsValid.</para>
+        <para>Whether this is a valid Scene.
+A Scene may be invalid if, for example, you tried to open a Scene that does not exist. In this case, the Scene returned from EditorSceneManager.OpenScene would return False for IsValid.</para>
       </summary>
       <returns>
-        <para>Whether this is a valid scene.</para>
+        <para>Whether this is a valid Scene.</para>
       </returns>
     </member>
     <member name="?:UnityEngine.SceneManagement.Scene.op_Equal(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)">
@@ -27709,8 +27729,13 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
       </summary>
       <param name="sceneName">Name or path of the Scene to load.</param>
       <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">Allows you to specify whether or not to load the Scene additively.
-        See SceneManagement.LoadSceneMode for more information about the options.</param>
+      <param name="mode">Allows you to specify whether or not to load the Scene additively. See SceneManagement.LoadSceneMode for more information about the options.</param>
+      <param name="sceneName">Name or path of the Scene to load.</param>
+      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
+      <param name="parameters">Various parameters used to load the Scene.</param>
+      <returns>
+        <para>A handle to the Scene being loaded.</para>
+      </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
@@ -27718,8 +27743,13 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
       </summary>
       <param name="sceneName">Name or path of the Scene to load.</param>
       <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">Allows you to specify whether or not to load the Scene additively.
-        See SceneManagement.LoadSceneMode for more information about the options.</param>
+      <param name="mode">Allows you to specify whether or not to load the Scene additively. See SceneManagement.LoadSceneMode for more information about the options.</param>
+      <param name="sceneName">Name or path of the Scene to load.</param>
+      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
+      <param name="parameters">Various parameters used to load the Scene.</param>
+      <returns>
+        <para>A handle to the Scene being loaded.</para>
+      </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
@@ -30944,7 +30974,7 @@ Note that GPUFences are only supported on PS4.</para>
     </member>
     <member name="P:UnityEngine.Time.maximumDeltaTime">
       <summary>
-        <para>The maximum time a frame can take. Physics and other fixed frame rate updates (like MonoBehaviour's MonoBehaviour.FixedUpdate).</para>
+        <para>The maximum time a frame can take. Physics and other fixed frame rate updates (like MonoBehaviour's MonoBehaviour.FixedUpdate) will be performed only for this duration of time per frame.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Time.maximumParticleDeltaTime">
@@ -31573,7 +31603,7 @@ Useful for restarting a trail from a new position.</para>
     </member>
     <member name="P:UnityEngine.Transform.localRotation">
       <summary>
-        <para>The rotation of the transform relative to the parent transform's rotation.</para>
+        <para>The rotation of the transform relative to the transform rotation of the parent.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Transform.localScale">
@@ -31947,6 +31977,12 @@ Useful for restarting a trail from a new position.</para>
         <para>Get the tag of this SpriteAtlas.</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.U2D.SpriteAtlas.CanBindTo(UnityEngine.Sprite)">
+      <summary>
+        <para>Return true if Sprite is packed into this SpriteAtlas.</para>
+      </summary>
+      <param name="sprite"></param>
+    </member>
     <member name="M:UnityEngine.U2D.SpriteAtlas.GetSprite(System.String)">
       <summary>
         <para>Clone the first Sprite in this atlas that matches the name packed in this atlas and return it.</para>
@@ -31973,6 +32009,12 @@ Useful for restarting a trail from a new position.</para>
       <summary>
         <para>Manages SpriteAtlas during runtime.</para>
       </summary>
+    </member>
+    <member name="?:UnityEngine.U2D.SpriteAtlasManager.atlasRegistered(System.Action`1&lt;UnityEngine.U2D.SpriteAtlas&gt;)">
+      <summary>
+        <para>Trigger when a SpriteAtlas is registered via invoking the callback in U2D.SpriteAtlasManager.atlasRequested.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.U2D.SpriteAtlasManager.atlasRequested(UnityEngine.U2D.SpriteAtlasManager/RequestAtlasCallback)">
       <summary>
@@ -32191,6 +32233,11 @@ Useful for restarting a trail from a new position.</para>
       <param name="a"></param>
       <param name="d"></param>
     </member>
+    <member name="?:UnityEngine.Vector2.op_Divide">
+      <summary>
+        <para>Divides a vector by another vector.</para>
+      </summary>
+    </member>
     <member name="?:UnityEngine.Vector2.op_Equal(UnityEngine.Vector2,UnityEngine.Vector2)">
       <summary>
         <para>Returns true if two vectors are approximately equal.</para>
@@ -32224,6 +32271,11 @@ Useful for restarting a trail from a new position.</para>
       </summary>
       <param name="d"></param>
       <param name="a"></param>
+    </member>
+    <member name="?:UnityEngine.Vector2.op_Multiply">
+      <summary>
+        <para>Multiplies a vector by another vector.</para>
+      </summary>
     </member>
     <member name="?:UnityEngine.Vector2.op_Plus(UnityEngine.Vector2,UnityEngine.Vector2)">
       <summary>
@@ -33267,16 +33319,16 @@ Useful for restarting a trail from a new position.</para>
       <param name="target"></param>
       <param name="maxDistanceDelta"></param>
     </member>
+    <member name="M:UnityEngine.Vector4.Normalize">
+      <summary>
+        <para>Makes this vector have a magnitude of 1.</para>
+      </summary>
+    </member>
     <member name="M:UnityEngine.Vector4.Normalize(UnityEngine.Vector4)">
       <summary>
         <para></para>
       </summary>
       <param name="a"></param>
-    </member>
-    <member name="M:UnityEngine.Vector4.Normalize">
-      <summary>
-        <para>Makes this vector have a magnitude of 1.</para>
-      </summary>
     </member>
     <member name="?:UnityEngine.Vector4.op_Divide(UnityEngine.Vector4,System.Single)">
       <summary>
@@ -33362,13 +33414,13 @@ Useful for restarting a trail from a new position.</para>
     </member>
     <member name="M:UnityEngine.Vector4.ToString">
       <summary>
-        <para>Returns a nicely formatted string for this vector.</para>
+        <para>Return the Vector4 formatted as a string.</para>
       </summary>
       <param name="format"></param>
     </member>
     <member name="M:UnityEngine.Vector4.ToString(System.String)">
       <summary>
-        <para>Returns a nicely formatted string for this vector.</para>
+        <para>Return the Vector4 formatted as a string.</para>
       </summary>
       <param name="format"></param>
     </member>

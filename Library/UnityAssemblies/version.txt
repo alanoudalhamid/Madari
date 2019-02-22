@@ -1,4 +1,4 @@
-2017.4.4f1:3.3.0.2
+2017.4.15f1:3.3.0.2
 Android
 D:/Apps/Unity/Editor/Data/Managed/UnityEditor.dll
 D:/Apps/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll
@@ -49,11 +49,11 @@ D:/Apps/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModu
 D:/Apps/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll
 D:/Apps/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
-D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll
+D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
@@ -61,11 +61,11 @@ C:/Users/alano/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.a
 C:/Users/alano/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll
 C:/Users/alano/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
-D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll
+D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll
 D:/Apps/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll

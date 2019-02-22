@@ -336,7 +336,7 @@
     </member>
     <member name="P:UnityEngine.EventSystems.EventSystem.isFocused">
       <summary>
-        <para>Flag to say weather the EventSystem thinks it should be paused or not based upon focused state.</para>
+        <para>Flag to say whether the EventSystem thinks it should be paused or not based upon focused state.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.EventSystems.EventSystem.pixelDragThreshold">
@@ -1785,7 +1785,7 @@
     </member>
     <member name="P:UnityEngine.UI.Button.onClick">
       <summary>
-        <para>UnityEvent that is triggered when the button is pressed.</para>
+        <para>UnityEvent that is triggered when the Button is pressed.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.UI.Button.ButtonClickedEvent">
@@ -2588,7 +2588,7 @@ If you have modified the list of options, you should call this method afterwards
     </member>
     <member name="P:UnityEngine.UI.FontData.defaultFontData">
       <summary>
-        <para>Get a font data with sensible defaults.</para>
+        <para>Maintain a list of all the FontData features.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.UI.FontData.font">
@@ -5303,7 +5303,7 @@ Characters 0-9, . (dot), and - (dash / minus sign) are allowed. The dash is only
     </member>
     <member name="P:UnityEngine.UI.Selectable.interactable">
       <summary>
-        <para>UI.Selectable.interactable.</para>
+        <para>Use to enable or disable the ability to select a selectable UI element (for example, a Button).</para>
       </summary>
     </member>
     <member name="P:UnityEngine.UI.Selectable.navigation">

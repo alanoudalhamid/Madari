@@ -3802,7 +3802,7 @@ Amount of compression. The value roughly corresponds to the ratio between the re
     </member>
     <member name="F:UnityEditor.BuildOptions.BuildScriptsOnly">
       <summary>
-        <para>Build only the scripts of a project.</para>
+        <para>Only build the scripts in a Project.</para>
       </summary>
     </member>
     <member name="F:UnityEditor.BuildOptions.CompressWithLz4">
@@ -4052,7 +4052,7 @@ These will be used as asset names, which you can then pass to AssetBundle.Load t
       </summary>
       <param name="buildPlayerOptions">Provide various options to control the behavior of BuildPipeline.BuildPlayer.</param>
       <returns>
-        <para>An error message if an error occurred.</para>
+        <para>A BuildReport giving build process information.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.BuildPipeline.BuildPlayer(System.String[],System.String,UnityEditor.BuildTarget,UnityEditor.BuildOptions)">
@@ -5559,12 +5559,15 @@ See DecoratorDrawer for an example of how to use this.</para>
     </member>
     <member name="M:UnityEditor.Editor.RenderStaticPreview(System.String,UnityEngine.Object[],System.Int32,System.Int32)">
       <summary>
-        <para>Override this method if you want to render a static preview that shows.</para>
+        <para>Override this method if you want to render a static preview.</para>
       </summary>
-      <param name="assetPath"></param>
-      <param name="subAssets"></param>
-      <param name="width"></param>
-      <param name="height"></param>
+      <param name="assetPath">The asset to operate on.</param>
+      <param name="subAssets">An array of all Assets at assetPath.</param>
+      <param name="width">Width of the created texture.</param>
+      <param name="height">Height of the created texture.</param>
+      <returns>
+        <para>Generated texture or null.</para>
+      </returns>
     </member>
     <member name="M:UnityEditor.Editor.Repaint">
       <summary>
@@ -13971,15 +13974,15 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="M:UnityEditor.EditorWindow.Show">
       <summary>
-        <para>Show the EditorWindow.</para>
+        <para>Show the EditorWindow window.</para>
       </summary>
-      <param name="immediateDisplay"></param>
+      <param name="immediateDisplay">Immediately display Show.</param>
     </member>
     <member name="M:UnityEditor.EditorWindow.Show(System.Boolean)">
       <summary>
-        <para>Show the EditorWindow.</para>
+        <para>Show the EditorWindow window.</para>
       </summary>
-      <param name="immediateDisplay"></param>
+      <param name="immediateDisplay">Immediately display Show.</param>
     </member>
     <member name="M:UnityEditor.EditorWindow.ShowAsDropDown(UnityEngine.Rect,UnityEngine.Vector2)">
       <summary>
@@ -15757,7 +15760,7 @@ Note: Use HandleUtility.GetHandleSize where you might want to have constant scre
     </member>
     <member name="M:UnityEditor.Handles.DrawPolyLine(UnityEngine.Vector3[])">
       <summary>
-        <para>Draw a line going through the list of all points.</para>
+        <para>Draw a line going through the list of points.</para>
       </summary>
       <param name="points"></param>
     </member>
@@ -18925,6 +18928,16 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>Beyond this distance a ray is considered to be unoccluded.</para>
       </summary>
     </member>
+    <member name="P:UnityEditor.LightmapEditorSettings.bakeResolution">
+      <summary>
+        <para>Specifies the resolution of the Baked lightmap in texels per world unit. Specifying higher resolutions can significantly increase the time it takes to bake the lightmap. The default value is one texel per world unit. The minimum value is 0.0001.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.LightmapEditorSettings.bounces">
+      <summary>
+        <para>Specifies the maximum number of bounces the lightmapper computes for indirect light. The default value is one. The range is 0 to 4.</para>
+      </summary>
+    </member>
     <member name="P:UnityEditor.LightmapEditorSettings.enableAmbientOcclusion">
       <summary>
         <para>Enable baked ambient occlusion (AO).</para>
@@ -18957,12 +18970,12 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="P:UnityEditor.LightmapEditorSettings.maxAtlasHeight">
       <summary>
-        <para>The maximum height of an individual lightmap texture.</para>
+        <para>This property is now obsolete. Use maxAtlasSize instead.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.LightmapEditorSettings.maxAtlasWidth">
       <summary>
-        <para>The maximum width of an individual lightmap texture.</para>
+        <para>This property is now obsolete. Use maxAtlasSize instead.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.LightmapEditorSettings.padding">
@@ -19032,7 +19045,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="T:UnityEditor.LightmapEditorSettings.Lightmapper">
       <summary>
-        <para>Backends available for baking lightmaps.</para>
+        <para>Backends available for baking lighting.</para>
       </summary>
     </member>
     <member name="F:UnityEditor.LightmapEditorSettings.Lightmapper.Enlighten">
@@ -19182,7 +19195,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="P:UnityEditor.Lightmapping.lightingDataAsset">
       <summary>
-        <para>The lighting data asset used by the active scene.</para>
+        <para>The lighting data asset used by the active Scene.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.Lightmapping.realtimeGI">
@@ -19192,7 +19205,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEditor.Lightmapping.Bake">
       <summary>
-        <para>Stars a synchronous bake job.</para>
+        <para>Starts a synchronous bake job.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.Lightmapping.BakeAsync">
@@ -19212,9 +19225,9 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEditor.Lightmapping.BakeMultipleScenes(System.String[])">
       <summary>
-        <para>Bakes an array of scenes.</para>
+        <para>Bakes an array of Scenes.</para>
       </summary>
-      <param name="paths">The path of the scenes that should be baked.</param>
+      <param name="paths">The path of the Scenes that should be baked.</param>
     </member>
     <member name="M:UnityEditor.Lightmapping.BakeReflectionProbe(UnityEngine.ReflectionProbe,System.String)">
       <summary>
@@ -19253,7 +19266,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
     </member>
     <member name="M:UnityEditor.Lightmapping.ClearLightingDataAsset">
       <summary>
-        <para>Remove the lighting data asset used by the current scene.</para>
+        <para>Remove the lighting data asset used by the current Scene.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.Lightmapping.ForceStop">
@@ -22949,6 +22962,11 @@ See Also: PhysicsVisualizationSettings.</para>
     <member name="P:UnityEditor.PlayerSettings.Android.useAPKExpansionFiles">
       <summary>
         <para>Use APK Expansion Files.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PlayerSettings.Android.ARCoreEnabled">
+      <summary>
+        <para>Enable support for Google ARCore on supported devices.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PlayerSettings.Facebook">
@@ -29763,7 +29781,7 @@ It is required that the GameObject is at the root of its current scene.</para>
     </member>
     <member name="P:UnityEditor.VersionControl.Asset.isInCurrentProject">
       <summary>
-        <para>Returns true if the assets is in the current project.</para>
+        <para>Returns true if the asset file exists and is in the current project.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.VersionControl.Asset.isMeta">

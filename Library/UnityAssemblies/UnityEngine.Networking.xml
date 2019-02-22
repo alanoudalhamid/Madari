@@ -827,7 +827,7 @@
     </member>
     <member name="T:UnityEngine.Networking.NetworkClient">
       <summary>
-        <para>This is a network client class used by the networking system. It contains a NetworkConnection that is used to connection to a network server.</para>
+        <para>This is a network client class used by the networking system. It contains a NetworkConnection that is used to connect to a network server.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Networking.NetworkClient.active">
@@ -4760,7 +4760,7 @@ All of the player objects in the game are disabled when the host is lost. Then, 
     </member>
     <member name="M:UnityEngine.Networking.NetworkWriter.WriteBytesAndSize(System.Byte[],System.Int32)">
       <summary>
-        <para>This writes a 16-bit count and a array of bytes of that length to the stream.</para>
+        <para>This writes a 16-bit count and an array of bytes of that length to the stream.</para>
       </summary>
       <param name="buffer">Array of bytes to write.</param>
       <param name="count">Number of bytes from the array to write.</param>
