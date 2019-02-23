@@ -234,25 +234,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\AntiAliasing.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\FXAA\FXAA.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\IAntiAliasing.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\SMAA\SMAA.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\Common\ImageEffectHelper.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\Common\MinAttribute.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\Common\RenderTextureUtility.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-    <Compile Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Utility\FPSCounter.cs" />
     <Compile Include="Assets\ArabicSupport\ArabicSupport.cs" />
     <Compile Include="Assets\ArabicSupport\Scripts\Fix3dTextCS.cs" />
     <Compile Include="Assets\ArabicSupport\Scripts\FixGUITextCS.cs" />
@@ -354,21 +335,6 @@
     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-    <None Include="Assets\AHProxy\PlanetShader\DemoScene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Daydream.xml" />
