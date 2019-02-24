@@ -2,9 +2,10 @@ Android
 PlayerPath?
 D:/Apps/Unity/Projects/Madary/Builds/Android_Mars.apk
 SceneListBegin?
-Assets/Game Elements/Scenes/Mars/Mars.unity
-Assets/Game Elements/Scenes/Spaceship.unity
 Assets/Game Elements/Scenes/SolarSystem.unity
+Assets/Game Elements/Scenes/Mars.unity
+Assets/Game Elements/Scenes/Mercury.unity
+Assets/Game Elements/Scenes/Spaceship.unity
 SceneListEnd?
 176f67aae4ec7273cfef37fd8876bd9a Assembly-CSharp.dll:.GvrDropdown
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -189,3 +190,5 @@ a8b185f93b85036e13e3f553c802615a Assembly-CSharp.dll:.GvrTooltip
 7d05c1a36ca8db05546065b852216990 Assembly-CSharp.dll:.GvrControllerInput
 b2945430dfd6bbdb5d77043b47bf85e7 Assembly-CSharp.dll:.GvrControllerReticleVisual
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GvrXREventsSubscriber
+650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.displayFPS
+650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.FPS
