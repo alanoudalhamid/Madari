@@ -185,7 +185,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d010f2194510584d81492c85cb5ba33, type: 2}
+      objectReference: {fileID: 2100000, guid: e66f80be82c0dff46b0e27d044be09b2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8732d563a511d834e823ac895b8a4004, type: 2}
   m_IsPrefabParent: 0
@@ -326,7 +326,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d010f2194510584d81492c85cb5ba33, type: 2}
+      objectReference: {fileID: 2100000, guid: e66f80be82c0dff46b0e27d044be09b2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93acc49b5a9f4e84b89aa62e0282a2a3, type: 2}
   m_IsPrefabParent: 0
@@ -594,7 +594,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d010f2194510584d81492c85cb5ba33, type: 2}
+      objectReference: {fileID: 2100000, guid: e66f80be82c0dff46b0e27d044be09b2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 2}
   m_IsPrefabParent: 0
@@ -1586,7 +1586,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d010f2194510584d81492c85cb5ba33, type: 2}
+      objectReference: {fileID: 2100000, guid: e66f80be82c0dff46b0e27d044be09b2, type: 2}
     - target: {fileID: 1948406263984082, guid: 8732d563a511d834e823ac895b8a4004, type: 2}
       propertyPath: m_Name
       value: Mounting_2 (1)
@@ -1953,7 +1953,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d010f2194510584d81492c85cb5ba33, type: 2}
+      objectReference: {fileID: 2100000, guid: e66f80be82c0dff46b0e27d044be09b2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e05ee61d6dad0e54eb51d1c8ec3becc6, type: 2}
   m_IsPrefabParent: 0
@@ -2687,7 +2687,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
