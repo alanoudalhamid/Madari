@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Option : MonoBehaviour {
-    public string option="";
+    public string optionText;
     public bool correct = false;
 
 }

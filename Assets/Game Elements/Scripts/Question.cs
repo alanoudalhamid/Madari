@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Question : MonoBehaviour
 {
-    bool asked = false;
-    public string question;
+    public bool asked = false;
+    public string questionText;
     public Option[] options = new Option[4];
     Option correctAnswer;
 }
