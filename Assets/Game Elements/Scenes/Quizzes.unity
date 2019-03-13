@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0078138225, g: 0.00752577, b: 0.007382915, a: 1}
+  m_IndirectSpecularColor: {r: 0.00010201629, g: 0.0047692405, b: 0.0029384482, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
@@ -140,8 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &3971809
 Transform:
   m_ObjectHideFlags: 0
@@ -182,29 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4e8abb3d2ef3b488cdff41336a7594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestionBox: {fileID: 1347946624}
-  scoreBox: {fileID: 1799418988}
-  questions:
-  - {fileID: 1832958085}
-  - {fileID: 362042295}
-  - {fileID: 1383095718}
-  Buttons:
-  - {fileID: 1902845215}
-  - {fileID: 62452704}
-  - {fileID: 1504870966}
-  - {fileID: 1840833988}
-  NextButton: {fileID: 35202458}
-  SkipButton: {fileID: 1216498456}
-  OptionsText:
-  - {fileID: 889798243}
-  - {fileID: 2077521853}
-  - {fileID: 1132205611}
-  - {fileID: 542535904}
-  correct: {fileID: 1628676534}
-  wrong: {fileID: 750678050}
-  StartScreen: {fileID: 612321812}
-  QuizScreen: {fileID: 1188675821}
-  ResultScreen: {fileID: 1350809241}
 --- !u!4 &9428563
 Transform:
   m_ObjectHideFlags: 0
@@ -356,8 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0631\u0627\u0628\u0639"
-  correct: 0
 --- !u!4 &36614690
 Transform:
   m_ObjectHideFlags: 0
@@ -698,8 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u062B\u0627\u0644\u062B"
-  correct: 0
 --- !u!4 &130465167
 Transform:
   m_ObjectHideFlags: 0
@@ -814,8 +785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &162719817
 Transform:
   m_ObjectHideFlags: 0
@@ -856,8 +825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u062B\u0627\u0644\u062B"
-  correct: 0
 --- !u!4 &164009351
 Transform:
   m_ObjectHideFlags: 0
@@ -948,13 +915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: 
-  options:
-  - {fileID: 906591800}
-  - {fileID: 1561514035}
-  - {fileID: 162719816}
-  - {fileID: 387866732}
 --- !u!4 &291460580
 Transform:
   m_ObjectHideFlags: 0
@@ -999,8 +959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &313626729
 Transform:
   m_ObjectHideFlags: 0
@@ -1041,13 +999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: 
-  options:
-  - {fileID: 899431695}
-  - {fileID: 313626728}
-  - {fileID: 767909971}
-  - {fileID: 1831418327}
 --- !u!4 &346453404
 Transform:
   m_ObjectHideFlags: 0
@@ -1092,13 +1043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: "\u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u062B\u0627\u0646\u064A"
-  options:
-  - {fileID: 805084522}
-  - {fileID: 407008309}
-  - {fileID: 1094047371}
-  - {fileID: 655142493}
 --- !u!4 &362042296
 Transform:
   m_ObjectHideFlags: 0
@@ -1143,8 +1087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &387866733
 Transform:
   m_ObjectHideFlags: 0
@@ -1185,8 +1127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 0
 --- !u!4 &407008310
 Transform:
   m_ObjectHideFlags: 0
@@ -1423,8 +1363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &552276969
 Transform:
   m_ObjectHideFlags: 0
@@ -1465,8 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &595087449
 Transform:
   m_ObjectHideFlags: 0
@@ -1577,8 +1513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0631\u0627\u0628\u0639"
-  correct: 0
 --- !u!4 &655142494
 Transform:
   m_ObjectHideFlags: 0
@@ -1619,8 +1553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &676732725
 Transform:
   m_ObjectHideFlags: 0
@@ -1661,8 +1593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 1
 --- !u!4 &705586206
 Transform:
   m_ObjectHideFlags: 0
@@ -1703,8 +1633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 1
 --- !u!4 &712393296
 Transform:
   m_ObjectHideFlags: 0
@@ -1854,8 +1782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &767909972
 Transform:
   m_ObjectHideFlags: 0
@@ -1896,8 +1822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 1
 --- !u!4 &805084523
 Transform:
   m_ObjectHideFlags: 0
@@ -2288,8 +2212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &899431696
 Transform:
   m_ObjectHideFlags: 0
@@ -2330,8 +2252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &900640859
 Transform:
   m_ObjectHideFlags: 0
@@ -2372,8 +2292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &906591801
 Transform:
   m_ObjectHideFlags: 0
@@ -2569,13 +2487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: 
-  options:
-  - {fileID: 2108939684}
-  - {fileID: 2094959973}
-  - {fileID: 3971808}
-  - {fileID: 1599919726}
 --- !u!4 &1069013889
 Transform:
   m_ObjectHideFlags: 0
@@ -2620,8 +2531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u062B\u0627\u0644\u062B"
-  correct: 0
 --- !u!4 &1094047372
 Transform:
   m_ObjectHideFlags: 0
@@ -2662,8 +2571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 0
 --- !u!4 &1117406723
 Transform:
   m_ObjectHideFlags: 0
@@ -2704,8 +2611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1128478784
 Transform:
   m_ObjectHideFlags: 0
@@ -2820,13 +2725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: 
-  options:
-  - {fileID: 595087448}
-  - {fileID: 1265340768}
-  - {fileID: 676732724}
-  - {fileID: 552276968}
 --- !u!4 &1155896264
 Transform:
   m_ObjectHideFlags: 0
@@ -3199,8 +3097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1265340769
 Transform:
   m_ObjectHideFlags: 0
@@ -3315,8 +3211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0631\u0627\u0628\u0639"
-  correct: 0
 --- !u!4 &1277065086
 Transform:
   m_ObjectHideFlags: 0
@@ -3473,8 +3367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1316894373
 Transform:
   m_ObjectHideFlags: 0
@@ -3660,13 +3552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: "\u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u062B\u0627\u0644\u062B"
-  options:
-  - {fileID: 705586205}
-  - {fileID: 2051249029}
-  - {fileID: 130465166}
-  - {fileID: 1277065085}
 --- !u!4 &1383095719
 Transform:
   m_ObjectHideFlags: 0
@@ -3811,8 +3696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1412806754
 Transform:
   m_ObjectHideFlags: 0
@@ -3964,13 +3847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: 
-  options:
-  - {fileID: 1316894372}
-  - {fileID: 900640858}
-  - {fileID: 1412806753}
-  - {fileID: 1128478783}
 --- !u!4 &1542724598
 Transform:
   m_ObjectHideFlags: 0
@@ -4015,8 +3891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1561514036
 Transform:
   m_ObjectHideFlags: 0
@@ -4057,8 +3931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1599919727
 Transform:
   m_ObjectHideFlags: 0
@@ -4485,8 +4357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &1831418328
 Transform:
   m_ObjectHideFlags: 0
@@ -4527,13 +4397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b5145d7595b044186dda327c5b97f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asked: 0
-  questionText: "\u0627\u0644\u0633\u0624\u0627\u0644 \u0627\u0644\u0623\u0648\u0644"
-  options:
-  - {fileID: 712393295}
-  - {fileID: 1117406722}
-  - {fileID: 164009350}
-  - {fileID: 36614689}
 --- !u!4 &1832958086
 Transform:
   m_ObjectHideFlags: 0
@@ -5064,8 +4927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: "\u0627\u0644\u062E\u064A\u0627\u0631 \u0627\u0644\u0623\u0648\u0644"
-  correct: 0
 --- !u!4 &2051249030
 Transform:
   m_ObjectHideFlags: 0
@@ -5231,8 +5092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &2094959974
 Transform:
   m_ObjectHideFlags: 0
@@ -5273,8 +5132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8a019d669de564eae69897660af7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionText: 
-  correct: 0
 --- !u!4 &2108939685
 Transform:
   m_ObjectHideFlags: 0
