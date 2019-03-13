@@ -304,15 +304,6 @@
     <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioRoomEditor.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioSoundfieldEditor.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioSourceEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\CheckboxConfigEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\EZAnimEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\MaterialUIEditorTools.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\RectTransformSnapEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\RippleConfigEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\ScreenConfigEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\ShadowGenEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\SnapButtonToTextEditor.cs" />
-    <Compile Include="Assets\MaterialUI-master\Editor\TexturePostProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
@@ -330,7 +321,6 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
     <None Include="Assets\GoogleVR\Shaders\Video\VideoUnlitShader.shader" />
     <None Include="Assets\Low Poly Flat Sci Fi Assets\Documentation\readme.txt" />
-    <None Include="Assets\MaterialUI-master\Fonts\NOTICE.txt" />
     <None Include="Assets\SciFiPack1\README.txt" />
     <None Include="Assets\Space Theme Items and Props Starter Pack\--ReadMe--.txt" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
