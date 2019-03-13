@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00010201629, g: 0.0047692405, b: 0.0029384482, a: 1}
+  m_IndirectSpecularColor: {r: 0.067025214, g: 0.061334476, b: 0.058409393, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -177,9 +177,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 9428561}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4e8abb3d2ef3b488cdff41336a7594, type: 3}
+  m_Script: {fileID: 11500000, guid: 00948cab045124e4d821b71e536edbad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  QuestionBox: {fileID: 0}
+  scoreBox: {fileID: 0}
+  questions: []
+  Buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  NextButton: {fileID: 0}
+  SkipButton: {fileID: 0}
+  OptionsText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  correct: {fileID: 0}
+  wrong: {fileID: 0}
+  StartScreen: {fileID: 0}
+  QuizScreen: {fileID: 0}
+  ResultScreen: {fileID: 0}
 --- !u!4 &9428563
 Transform:
   m_ObjectHideFlags: 0
