@@ -88,4 +88,10 @@ public class QuizzesLogic : MonoBehaviour {
             wrong.Play();
         }
     }
+    public void ExitQuiz()
+    {
+        StartScreen.SetActive(false);
+        ResultScreen.SetActive(true);
+        QuizScreen.SetActive(false);
+    }
 }
