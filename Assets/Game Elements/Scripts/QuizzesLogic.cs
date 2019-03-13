@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ArabicSupport;
 
 public class QuizzesLogic : MonoBehaviour {
     int score = 0, askedQuestions = 0;
@@ -13,7 +14,7 @@ public class QuizzesLogic : MonoBehaviour {
     public Button[] Buttons = new Button[4];
     public GameObject NextButton;
     public GameObject SkipButton;
-    public Text[] OptionsBoxes = new Text[4];
+    public Text[] OptionsText = new Text[4];
     public AudioSource correct, wrong;
     public GameObject StartScreen;
     public GameObject QuizScreen;
@@ -44,11 +45,11 @@ public class QuizzesLogic : MonoBehaviour {
             {
                 currentQuestion = questions[QuizIndex];
                 currentQuestion.GetComponent<Question>().asked = true;
-                QuestionBox.text = currentQuestion.GetComponent<Question>().questionText;
+                QuestionBox.text = ArabicFixer.Fix(currentQuestion.GetComponent<Question>().questionText);
                 for (int i = 0; i < 4; i++)
                 {
                     CurrentOptions[i] = currentQuestion.GetComponent<Question>().options[i];
-                    OptionsBoxes[i].text = CurrentOptions[i].GetComponent<Option>().optionText;
+                    OptionsText[i].text = ArabicFixer.Fix(CurrentOptions[i].GetComponent<Option>().optionText);
                 }
                 askedQuestions++;
             }
