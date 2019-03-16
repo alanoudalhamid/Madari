@@ -8,7 +8,7 @@ QualitySettings:
   m_QualitySettings:
   - serializedVersion: 2
     name: Mobile
-    pixelLightCount: 4
+    pixelLightCount: 1
     shadows: 0
     shadowResolution: 2
     shadowProjection: 1
@@ -21,7 +21,7 @@ QualitySettings:
     blendWeights: 4
     textureQuality: 0
     anisotropicTextures: 2
-    antiAliasing: 2
+    antiAliasing: 0
     softParticles: 0
     softVegetation: 1
     realtimeReflectionProbes: 0
