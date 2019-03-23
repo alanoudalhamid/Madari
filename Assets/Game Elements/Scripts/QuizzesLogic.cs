@@ -13,7 +13,7 @@ public class QuizzesLogic : MonoBehaviour {
     Option[] CurrentOptions = new Option[4];
     public Button[] Buttons = new Button[4];
     public GameObject NextButton;
-    public GameObject SkipButton;
+    //public GameObject SkipButton;
     public Text[] OptionsText = new Text[4];
     public AudioSource correct, wrong;
     public GameObject StartScreen;
@@ -37,7 +37,7 @@ public class QuizzesLogic : MonoBehaviour {
     public void GetQuestion() {
         int QuizIndex;
         NextButton.SetActive(false);
-        SkipButton.SetActive(true);
+        //SkipButton.SetActive(true);
         if (askedQuestions != NumOfQuestions)
         {
             QuizIndex = Random.Range(0, NumOfQuestions - 1);
