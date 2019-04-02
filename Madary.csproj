@@ -240,12 +240,14 @@
     <Compile Include="Assets\ArabicSupport\Scripts\Fix3dTextCS.cs" />
     <Compile Include="Assets\ArabicSupport\Scripts\FixGUITextCS.cs" />
     <Compile Include="Assets\ArabicSupport\Scripts\SetArabicTextExample.cs" />
+    <Compile Include="Assets\Game Elements\Scripts\AudioPlayerManager.cs" />
     <Compile Include="Assets\Game Elements\Scripts\displayFPS.cs" />
     <Compile Include="Assets\Game Elements\Scripts\FPS.cs" />
     <Compile Include="Assets\Game Elements\Scripts\Option.cs" />
     <Compile Include="Assets\Game Elements\Scripts\Question.cs" />
     <Compile Include="Assets\Game Elements\Scripts\QuizzesLogic.cs" />
     <Compile Include="Assets\Game Elements\Scripts\SceneNavigation.cs" />
+    <Compile Include="Assets\Game Elements\Scripts\SpaceDiveManager.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioListener.cs" />
     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Audio\GvrAudioRoom.cs" />
