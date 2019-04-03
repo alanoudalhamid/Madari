@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.85396713, g: 0.4254655, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.8539601, g: 0.42546156, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3259,6 +3259,98 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1001 &1136494791
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -13.345803
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.22384116
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -47.04471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090770965770782, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 82330831622179876, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad0e3a403758f66499d625ca6b8747c4, type: 3}
+    - target: {fileID: 82330831622179876, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82393010647694038, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a58243200b140af408af3126a4f81380, type: 3}
+    - target: {fileID: 82393010647694038, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82845904746503814, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2265ef5c0f5a5b64fb30f424a095de95, type: 3}
+    - target: {fileID: 82845904746503814, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82747596179130850, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e297264046d0b8348a83ea44b4388f0c, type: 3}
+    - target: {fileID: 82747596179130850, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82525626389482862, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f2a62db09922a0e4a841d26ce32479eb, type: 3}
+    - target: {fileID: 82525626389482862, guid: 8d69e15eab89929439436fe65f8a9942,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d69e15eab89929439436fe65f8a9942, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1171039273
 GameObject:
   m_ObjectHideFlags: 0

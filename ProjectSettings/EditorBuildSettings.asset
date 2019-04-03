@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Game Elements/Scenes/Quizzes.unity
     guid: c86fcd37f78c1af4d889486ccd582606
   - enabled: 0
