@@ -241,6 +241,7 @@
     <Compile Include="Assets\ArabicSupport\Scripts\FixGUITextCS.cs" />
     <Compile Include="Assets\ArabicSupport\Scripts\SetArabicTextExample.cs" />
     <Compile Include="Assets\Game Elements\Scripts\AudioPlayerManager.cs" />
+    <Compile Include="Assets\Game Elements\Scripts\DisableDontDestroyOnLoad.cs" />
     <Compile Include="Assets\Game Elements\Scripts\displayFPS.cs" />
     <Compile Include="Assets\Game Elements\Scripts\FPS.cs" />
     <Compile Include="Assets\Game Elements\Scripts\Option.cs" />
