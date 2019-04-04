@@ -13,61 +13,37 @@ public class SpaceDiveManager : MonoBehaviour {
     public Animator GVREmulatorAnimator;
     static string triggerName="";
     public static bool firstLoad = true;
-    public bool needsTransition=false;
 
     private void Start()
     {
         if (!firstLoad)
         {
-            Debug.Log("PlanetsIndex= " + PlanetsIndex);
+          //  Debug.Log("PlanetsIndex= " + PlanetsIndex);
+            GVREmulatorAnimator.SetBool("Default State", true);
             GVREmulatorAnimator.SetBool("intro-neptune", false);
-            GVREmulatorAnimator.SetBool(triggerName, true);
+            GVREmulatorAnimator.enabled = false;
+           // Debug.Log("Before= " + GVREmulator.transform.position);
+            GVREmulator.transform.position = PlanetsNavigationPoints[PlanetsIndex].transform.position;
+            GVREmulator.transform.rotation = PlanetsNavigationPoints[PlanetsIndex].transform.rotation;
+           // Debug.Log("after= " + GVREmulator.transform.position);
+           // Debug.Log("after2= " + GVREmulator.transform.position);
+
         }
         else
         {
             GVREmulatorAnimator.SetBool("intro-neptune", true);
             firstLoad = false;
         }
-        /* if (!firstLoad)
-         {
-             Debug.Log("PlanetsIndex= " + PlanetsIndex);
-             GVREmulatorAnimator.SetBool("intro-neptune", false);
-             Debug.Log("Position before: " + GVREmulator.transform.position);
-             GVREmulator.transform.position = PlanetsNavigationPoints[PlanetsIndex].transform.position;
-             GVREmulator.transform.rotation = PlanetsNavigationPoints[PlanetsIndex].transform.rotation;
-             Debug.Log("Position after: " + GVREmulator.transform.position);
-         }
-         else
-         {
-             GVREmulatorAnimator.SetBool("intro-neptune", true);
-             firstLoad = false;
-         }*/
-
-
+ 
     }
-
-    void Transition()
-    {
-        Debug.Log("in transition");
-        Debug.Log("Position before: " + GVREmulator.transform.position);
-        GVREmulator.transform.position = PlanetsNavigationPoints[PlanetsIndex].transform.position;
-        GVREmulator.transform.rotation = PlanetsNavigationPoints[PlanetsIndex].transform.rotation;
-        Debug.Log("Position after: " + GVREmulator.transform.position);
-        needsTransition = false;
-    }
-
 
     private void Update()
     {
-        if (needsTransition)
-        {
-            Transition();
-        }
-        //Debug.Log("Position after: " + GVREmulator.transform.position);
 
         if (GVREmulator.transform.position == PlanetsNavigationPoints[PlanetsIndex].transform.position)
         {
             ActiveAnimation = false;
+            GVREmulatorAnimator.SetBool(triggerName, false);
         }
 
         if (!ActiveAnimation && !VisibileNavigationUI)
@@ -98,14 +74,12 @@ public class SpaceDiveManager : MonoBehaviour {
             VisibileNavigationUI = false;
         }
     }
-    /* void Awake()
-     {
-         //DontDestroyOnLoad(PlanetsIndex);
-     }*/
-
  
      public void PlayAnimation(bool forward)
     {
+
+        GVREmulatorAnimator.enabled = true;
+       // Debug.Log(triggerName);
         if (!ActiveAnimation)
         {
             int x;
@@ -117,7 +91,10 @@ public class SpaceDiveManager : MonoBehaviour {
             {
                 x = -1;
             }
+            
             triggerName = Planets[PlanetsIndex] + "-" + Planets[PlanetsIndex + x];
+            GVREmulatorAnimator.Play(triggerName);
+         //   Debug.Log("playing animation");
             GVREmulatorAnimator.SetBool(triggerName, true);
             PlanetsIndex += x;
             ActiveAnimation = true;
