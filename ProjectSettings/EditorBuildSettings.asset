@@ -6,20 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Game Elements/Scenes/Spaceship.unity
+    guid: 39cf6c32622ffb849ac90f9c8644b82d
+  - enabled: 1
     path: Assets/Game Elements/Scenes/Quizzes.unity
     guid: c86fcd37f78c1af4d889486ccd582606
   - enabled: 1
     path: Assets/Game Elements/Scenes/SolarSystem.unity
     guid: 4d20ae9ddb19d1546b538e17c20b7167
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game Elements/Scenes/Mars.unity
     guid: e1b793c40df980747b159fd6e9176269
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game Elements/Scenes/Mercury.unity
     guid: 7b7cbae3b4cb9428791841547c036b16
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game Elements/Scenes/Venus.unity
     guid: 66642c09995eb4271b7b6e702eb38098
   - enabled: 1
-    path: Assets/Game Elements/Scenes/Spaceship.unity
-    guid: 39cf6c32622ffb849ac90f9c8644b82d
+    path: Assets/Game Elements/Scenes/Neptune.unity
+    guid: 748a6680cb0a90149a6524c1d09de66b
+  - enabled: 1
+    path: Assets/Game Elements/Scenes/Uranus.unity
+    guid: 4ad28d31ee1e043968eae8fe56db75a3
