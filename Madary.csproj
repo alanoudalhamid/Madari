@@ -344,6 +344,7 @@
     <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\WelcomingAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-6DOF.xml" />
