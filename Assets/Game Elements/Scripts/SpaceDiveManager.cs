@@ -10,7 +10,7 @@ public class SpaceDiveManager : MonoBehaviour {
     public GameObject NavigationUI_forward, NavigationUI__backward;
     public bool ActiveAnimation, VisibileNavigationUI=false;
     public GameObject GVREmulator;
-    public Animator GVREmulatorAnimator;
+    public Animator GVREmulatorAnimator, SpaceMan;
     static string triggerName="";
     public static bool firstLoad = true;
 
@@ -86,10 +86,12 @@ public class SpaceDiveManager : MonoBehaviour {
             if (forward)
             {
                 x = 1;
+                SpaceMan.SetBool("MoveForward", true);
             }
             else
             {
                 x = -1;
+                SpaceMan.SetBool("MoveBackward", true);
             }
             
             triggerName = Planets[PlanetsIndex] + "-" + Planets[PlanetsIndex + x];
